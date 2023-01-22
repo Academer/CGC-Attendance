@@ -11,6 +11,9 @@
 
 body {
   height: 150vh;
+  display: flex;
+  /* width: 145rem; */
+  margin: 0 auto;
 }
 
 aside h1 {
@@ -33,12 +36,12 @@ aside {
   border-bottom-right-radius: 3rem;
 }
 
-ul {
+aside ul {
   margin-top: 5rem;
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 aside ul li {
@@ -75,8 +78,35 @@ aside ul li:hover {
   background-color: #fff;
   border-radius: 2rem;
 }
+.profile {
+  position: absolute;
+  bottom: 4rem;
+  display: flex;
+  gap: 1rem;
+}
+.profile span {
+  font-size: 3rem;
+  align-self: center;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: #ffffff50;
+  border-radius: 1rem;
+}
+.profileContent {
+  display: flex;
+  flex-direction: column;
+}
+.profileContent h1 {
+  font-size: 1.6rem !important;
+  letter-spacing: 0.1rem;
+}
+.profileContent h2 {
+  font-size: 1.6rem !important;
+  color: #ffffff90;
+  /* letter-spacing: 0.1rem; */
+}
 main {
-  padding: 5rem 30rem;
+  padding: 5rem 10rem 5rem 30rem;
 }
 
 main h1 {
@@ -181,4 +211,224 @@ main h1 {
 }
 .active-lecture .lec .lectureContent h2 {
   color: #fff;
+}
+
+.practical {
+  width: 30rem;
+}
+
+.attendance {
+  position: fixed;
+  /* left: 95rem; */
+  right: 10rem;
+  height: 100vh;
+  width: 40rem;
+  /* background-color: #6c5ddc; */
+}
+.heading {
+  width: 100%;
+  height: 15rem;
+  background-color: #6c5ddc;
+  border-bottom-left-radius: 7rem;
+  border-bottom-right-radius: 7rem;
+}
+
+.heading h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 4rem;
+}
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: -3rem auto;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  background-color: #fff;
+  border-radius: 3rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.date span {
+  font-weight: 800;
+  color: #6c5ddc;
+}
+
+ul {
+  list-style: none;
+}
+.calendar {
+  margin-top: 5rem;
+  width: 100%;
+  /* height: 20rem; */
+  /* background-color: #5236ff; */
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 2rem #5236ff10; */
+  padding-top: 1rem;
+  border-radius: 2rem;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 1.3rem 0;
+  background-color: #ffffff20;
+  display: flex;
+  justify-content: center;
+}
+
+.weekdays li {
+  width: 5.3rem;
+  display: inline-block;
+  font-size: 1.4rem;
+  /* color: #fff; */
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 2rem 0;
+  padding-left: 1rem;
+  /* background: ; */
+  margin: 0;
+}
+/* .line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #00000025;
+  /* margin: 0 0 3rem 0; *
+} */
+.line2 {
+  width: 7rem;
+  align-self: center;
+  height: 0.2rem;
+  background-color: #00000025;
+  /* margin: 0 0 3rem 0; */
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 5.3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  cursor: pointer;
+  /* color: #fff; */
+}
+/* .days li:hover {
+  background-color: #ffffff40;
+  border-radius: 50%;
+  padding: 0.4rem;
+} */
+/* Highlight the "current" day */
+.days .active {
+  padding: 0.4rem 0.5rem;
+  /* display: flex; */
+  /* align-items: center; */
+  background-color: #6c5ddc;
+  border-radius: 50%;
+  border-radius: 0.5rem;
+  color: #fff !important;
+  /* font-weight: 700; */
+  font-size: 1.4rem;
+}
+
+.days li .holiday {
+  padding: 0.4rem 0.7rem;
+  width: 5rem !important;
+  /* display: flex; */
+  /* align-items: center; */
+  /* background-color: #6c5ddc; */
+  border-radius: 0.5rem;
+  color: #999 !important;
+  /* font-weight: 700; */
+  font-size: 1.4rem;
+}
+.days .present {
+  padding: 0.4rem 0.5rem;
+  width: 5rem !important;
+  /* display: flex; */
+  /* align-items: center; */
+  background-color: #00ff00;
+  background-color: #32cd32;
+  background-color: #21d1ff;
+  border-radius: 0.5rem;
+  color: #fff !important;
+  /* font-weight: 700; */
+  font-size: 1.4rem;
+}
+.days .absent {
+  padding: 0.4rem 0.5rem;
+  width: 5rem !important;
+  /* display: flex; */
+  /* align-items: center; */
+  /* background-color: #00ff00; */
+  background-color: red;
+  background-color: #e94d90;
+  border-radius: 0.5rem;
+  color: #fff !important;
+  /* font-weight: 700; */
+  font-size: 1.4rem;
+}
+
+.total {
+  margin-top: 3rem;
+  width: 100%;
+  height: 10rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 0 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total h2 {
+  font-size: 2rem;
+}
+
+.total h2:last-child {
+  padding: 1rem;
+  background-color: #6c5ddc;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+.totall {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.total-absent {
+  width: 100%;
+  height: 15rem;
+  background-color: #e94d90;
+  position: relative;
+  border-radius: 2rem;
+}
+.total-present {
+  width: 100%;
+  border-radius: 2rem;
+  height: 15rem;
+  position: relative;
+  background-color: #21d1ff;
+}
+
+.totall h1 {
+  margin: 1.5rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.totall h2 {
+  font-size: 10rem;
+  color: #fff;
+  position: absolute;
+  bottom: -3rem;
+  right: 1rem;
 }
