@@ -6,13 +6,14 @@
   border: none;
   outline: none;
   font-family: "Nunito";
+  color: #333333;
 }
 
 body {
   height: 150vh;
 }
 
-h1 {
+aside h1 {
   /* margin-left: 3rem; */
   text-align: center;
   font-size: 3rem;
@@ -50,10 +51,13 @@ aside ul li {
   /* color: #777; */
   /* color: #6c5ddc; */
 
-  color: #fff;
+  color: #fff !important;
   font-weight: 600;
   cursor: pointer;
   transition: 0.2s all;
+}
+aside ul li span {
+  color: #fff;
 }
 aside ul li:hover {
   transition: 0.2s all;
@@ -70,4 +74,111 @@ aside ul li:hover {
   width: 0.5rem;
   background-color: #fff;
   border-radius: 2rem;
+}
+main {
+  padding: 5rem 30rem;
+}
+
+main h1 {
+  font-size: 3rem;
+  /* text-align: center; */
+}
+
+.schedule {
+  /* width: 60rem; */
+  margin-top: 3rem;
+  display: flex;
+}
+.timmings {
+  /* margin-top: 4rem; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 5rem; */
+  width: fit-content;
+}
+.time {
+  /* height: 7.5rem; */
+  min-width: 19rem;
+  align-self: center;
+  width: fit-content;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #888;
+  padding: 2.65rem 3rem 2rem 0;
+}
+.timmings div:last-child {
+  border: none;
+}
+
+.classes {
+  /* margin-top: 1rem; */
+  display: flex;
+  flex-direction: column;
+}
+.lecture {
+  width: 100%;
+  border-bottom: 2px solid #99999970;
+  padding: 1rem;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.lecture:last-child {
+  border: none;
+}
+.lec {
+  padding: 0.5rem 3rem;
+  position: relative;
+  background-color: #f7f7fe;
+  width: 18rem;
+  height: 5.3rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  /* margin-left: 10rem; */
+}
+.lec h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.lec h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.line {
+  position: absolute;
+  height: 3rem;
+  top: 20%;
+  left: 2.5rem;
+  border-radius: 1rem;
+  width: 0.6rem;
+  background-color: lightskyblue;
+  /* background-color: #6c5ddc; */
+}
+
+.lectureContent {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  /* align-items: center; */
+}
+
+.active-lecture .time {
+  font-weight: 800;
+  color: #6c5ddc;
+}
+
+.active-lecture .lec .line {
+  background-color: #fff;
+}
+
+.active-lecture .lec {
+  background-color: #6c5ddc;
+}
+.active-lecture .lec .lectureContent h4 {
+  color: #fff;
+}
+.active-lecture .lec .lectureContent h2 {
+  color: #fff;
 }
