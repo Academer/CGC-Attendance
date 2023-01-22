@@ -5,4 +5,69 @@
   font-size: 62.5%;
   border: none;
   outline: none;
+  font-family: "Nunito";
+}
+
+body {
+  height: 150vh;
+}
+
+h1 {
+  /* margin-left: 3rem; */
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  color: #fff;
+  /* color: #6c5ddc; */
+}
+
+aside {
+  height: 100vh;
+  position: fixed;
+  padding: 5rem 2rem;
+  background-color: #6c5ddc;
+  /* border: 3px solid #6c5ddc; */
+  /* border-color: #6c5ddc; */
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+ul {
+  margin-top: 5rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+aside ul li {
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  /* color: #777; */
+  /* color: #6c5ddc; */
+
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+aside ul li:hover {
+  transition: 0.2s all;
+  background-color: #ffffff20;
+}
+.aside-active {
+  background-color: #ffffff50 !important;
+}
+
+.dot-active {
+  position: absolute;
+  left: 0;
+  height: 2rem;
+  width: 0.5rem;
+  background-color: #fff;
+  border-radius: 2rem;
 }
