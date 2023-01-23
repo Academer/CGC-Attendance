@@ -162,6 +162,8 @@ main h1 {
   background-color: #f7f7fe;
   width: 18rem;
   height: 5.3rem;
+
+  transition: all 0.2s ease-in-out;
   border-radius: 2rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   /* margin-left: 10rem; */
@@ -387,6 +389,8 @@ ul {
   display: flex;
   padding: 0 3rem;
   justify-content: space-between;
+
+  transition: all 0.2s ease-in-out;
   align-items: center;
 }
 
