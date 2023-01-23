@@ -254,6 +254,7 @@ main h1 {
 }
 .date span {
   font-weight: 800;
+  cursor: pointer;
   color: #6c5ddc;
 }
 
@@ -394,10 +395,10 @@ ul {
 }
 
 .total h2:last-child {
-  padding: 1rem;
+  padding: 0.7rem;
   background-color: #6c5ddc;
   color: #fff;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 .totall {
   display: flex;
@@ -408,17 +409,35 @@ ul {
   width: 100%;
   height: 15rem;
   background-color: #e94d90;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
   position: relative;
   border-radius: 2rem;
+  transition: all 0.2s ease-in-out;
 }
 .total-present {
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
   width: 100%;
   border-radius: 2rem;
   height: 15rem;
   position: relative;
+  transition: all 0.2s ease-in-out;
   background-color: #21d1ff;
 }
-
+.lec:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+.profile {
+  cursor: pointer;
+}
+.total:hover,
+.total-present:hover,
+.total-absent:hover {
+  cursor: pointer;
+  transform: translateY(-1rem);
+  transition: all 0.2s ease-in-out;
+}
 .totall h1 {
   margin: 1.5rem;
   color: #fff;
