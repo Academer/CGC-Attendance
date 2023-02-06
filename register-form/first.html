@@ -5,15 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>otp verification</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <style>
-      
       * {
         margin: 0;
         padding: 0;
@@ -25,8 +33,8 @@
         font-style: "Nunito";
       }
 
-      body{
-        height:100vh;
+      body {
+        height: 100vh;
       }
 
       .pic {
@@ -36,18 +44,18 @@
       .first {
         /* border: 3px solid black; */
         background-color: #6c5ddc;
-        height:70rem;
-        width:60rem;
-        display:flex;
-        justify-content:center;
-        align-items:flex-end;
-        padding-bottom:5rem;
+        height: 70rem;
+        width: 60rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 5rem;
         /* border-top-left-radius: 4rem;
          border-bottom-left-radius: 4rem; */
       }
 
-      .second{
-      width:50rem;
+      .second {
+        width: 50rem;
       }
 
       .container {
@@ -82,11 +90,10 @@
         padding-left: 6rem;
       }
 
-
       .btn {
         padding: 1rem 1.6rem;
         font-size: 2.4rem;
-        margin-top: 6.4rem;
+        margin-top: -4.4rem;
         width: 92%;
         border-radius: 4rem;
         background-color: #6c5ddc;
@@ -110,23 +117,126 @@
         color: #6c5ddc;
       }
 
+      /* below 530px */
+
+      @media (max-width: 33em) {
+        .pic {
+          display: none;
+        }
+
+        .second {
+          padding: 5rem 3rem !important;
+        }
+
+        .first {
+          display: none !important;
+        }
+
+        .container {
+          width: 90vw !important;
+          height: fit-content !important;
+          margin: 2rem auto !important;
+        }
+
+        input {
+          width: 100% !important;
+        }
+
+        .links {
+          width: 100% !important;
+          display: flex !important;
+          justify-content: space-between !important;
+        }
+
+        .pass {
+          justify-self: flex-end !important;
+        }
+
+        .remember {
+          justify-self: flex-end !important;
+          display: none;
+        }
+
+        .btn {
+          width: 100% !important;
+          margin-top: -4rem !important;
+        }
+
+        .top {
+          margin-bottom: 6rem !important;
+        }
+
+        .reg {
+          display: none !important;
+        }
+
+        p {
+          margin-bottom: 1.6rem;
+        }
+      }
     </style>
   </head>
   <body>
+    <style>
+      .error {
+        width: auto;
+        padding: 1rem 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        color: #fff;
+        /* color: #6c5ddc; */
+        /* left: 42.5%; */
+        height: 5rem;
+        /* border: 2px solid red; */
+        /* border: 2px solid #6c5ddc; */
+        border-radius: 1rem;
+        background-color: red;
+        box-shadow: 0 0 50rem rgba(0, 0, 0, 0.1);
+      }
+      .err {
+        position: absolute;
+        top: 2.5rem;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+      }
+      .none {
+        display: none;
+      }
+    </style>
+    <div class="err">
+      <div class="error none">Error</div>
+    </div>
     <div class="container">
       <div class="first">
-        <img class="pic" src="Object.svg" alt="picture" />
+        <img class="pic" src="img/Object.webp" alt="picture" />
       </div>
       <div class="second">
+        <h1
+          class="reg"
+          style="
+            position: absolute;
+            top: 13rem;
+            margin-top: 0;
+            margin-bottom: 5rem;
+            margin-top: 0;
+            margin-bottom: 5rem;
+          "
+        >
+          Register
+        </h1>
         <form action="#">
           <div class="email">
             <p>College Email</p>
             <input type="email" placeholder="Enter your email" />
+            <ion-icon name="mail-outline"></ion-icon>
           </div>
-            </form>
-            <button class="btn">Send OTP</button>
-          </form>
+          <button class="btn">Send OTP</button>
+        </form>
       </div>
     </div>
+    <script src="./js/register1.js"></script>
   </body>
 </html>
