@@ -179,10 +179,14 @@ main {
   gap: 1rem;
   align-items: center;
 }
+.name-heading {
+  font-size: 5rem;
+}
 
 .student-list:last-child {
   border: none;
 }
+
 .practical {
   width: 30rem;
 }
@@ -191,7 +195,4 @@ main {
   width: 30px;
   height: 30px;
   stroke: #fff;
-}
-.flex-teacher {
-  display: flex;
 }
