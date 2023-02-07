@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.24vh;
+  border: none;
+  outline: none;
+  font-family: "Nunito";
+  text-decoration: none;
+  color: #333333;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  /* width: 145rem; */
+  margin: 0 auto;
+}
+
+aside h1 {
+  /* margin-left: 3rem; */
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  color: #fff;
+  /* color: #6c5ddc; */
+}
+
+aside {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 5rem 2rem;
+  background-color: #6c5ddc;
+  /* border: 3px solid #6c5ddc; */
+  /* border-color: #6c5ddc; */
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+aside ul {
+  margin-top: 5rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+aside ul li {
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  /* color: #777; */
+  /* color: #6c5ddc; */
+
+  color: #fff !important;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+aside ul a {
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  color: #fff !important;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+aside ul a span {
+  color: #fff;
+}
+aside ion-icon {
+  font-size: 2.2rem;
+  color: #fff;
+}
+aside ul a:hover {
+  transition: 0.2s all;
+  background-color: #ffffff20;
+}
+.aside-active {
+  background-color: #ffffff50 !important;
+}
+.logout {
+  /* position: absolute;
+  bottom: 3rem;
+  display: flex;
+  font-size: 1.5rem;
+  gap: 1rem;
+  align-items: center;
+  left: 2rem;
+  color: #fff; */
+}
+.logout ion-icon {
+  font-size: 1.7rem;
+  background-color: #ffffff40;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+}
+.dot-active {
+  position: absolute;
+  left: 0;
+  height: 2rem;
+  width: 0.5rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.profile {
+  position: absolute;
+  bottom: 4rem;
+  display: flex;
+  gap: 1rem;
+}
+.profile .logout {
+  align-self: center;
+  margin-left: 2rem;
+  justify-self: flex-end;
+}
+.profile span {
+  font-size: 3rem;
+  align-self: center;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: #ffffff50;
+  border-radius: 1rem;
+}
+.profileContent {
+  display: flex;
+  flex-direction: column;
+}
+.profileContent h1 {
+  font-size: 1.6rem !important;
+  letter-spacing: 0.1rem;
+}
+.profileContent h2 {
+  font-size: 1.6rem !important;
+  color: #ffffff90;
+  /* letter-spacing: 0.1rem; */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10rem;
+
+  /* grid-template-columns: 20fr 80fr; */
+
+  /* gap: 20rem; */
+}
+
+.second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+}
+
+.main {
+  height: 90vh;
+  display: flex;
+  margin: 0 auto;
+
+  justify-content: center !important;
+  align-items: center !important;
+  /* padding: 30rem; */
+  box-shadow: 0 0 2rem rgba(196, 190, 241, 0.926);
+  border-radius: 4rem;
+}
+
+.feedback {
+  width: 60rem;
+  padding: 3rem;
+  /* height: 90vh */
+}
+
+label {
+  font-size: 2rem;
+}
+
+.form-input {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+form input,
+select {
+  padding: 2rem;
+  padding: 3rem;
+  width: 100% !important;
+
+  width: 92%;
+  padding: 1.6rem;
+  border: 1px solid #00000060;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  border-radius: 4rem;
+  padding-left: 4rem;
+}
+
+.remember {
+  display: flex;
+  align-items: center !important;
+  gap: 1rem;
+}
+
+#checkbox {
+  width: 18px;
+  height: 18px;
+}
+
+.btn {
+  padding: 1rem 1.6rem;
+  font-size: 2.4rem;
+  margin-top: 3rem;
+  width: 100%;
+  border-radius: 4rem;
+  background-color: #6c5ddc;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border: 1px solid #6c5ddc;
+  transition: 0.2s all;
+}
+
+.btn:hover {
+  transition: 0.2s all;
+  border: 1px solid #6c5ddc;
+
+  background-color: #fff;
+  color: #6c5ddc;
+}
+
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 4.4rem;
+  color: #6c5ddc;
+}
+
+@media screen and (max-width: 768px) {
+  /* * { font-size: 100% !important; } */
+  .nooone {
+    display: block;
+    position: fixed;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    display: flex;
+    height: 120vh !important;
+    flex-direction: column;
+    position: relative;
+  }
+  .aside {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000085;
+    overflow: hidden !important;
+  }
+  .lecture {
+    z-index: -1;
+  } /* .aside { display: none !important; }
+*/
+  .lec {
+    z-index: -1;
+  }
+  .noone {
+    display: none;
+  }
+  .cloose {
+    position: fixed;
+    top: 1.3rem;
+    left: 2rem;
+    z-index: 99999999999 !important;
+  }
+  .none {
+    /* display:
+absolute; */
+    display: none !important;
+  }
+  .cloose ion-icon {
+    font-size: 3.5rem !important;
+    z-index: 99999999999 !important;
+    color: #fff !important;
+  }
+  aside {
+    /* z-index: 99; */
+    z-index: 999999999; /* position: unset; */
+    width: 25rem;
+  }
+  .attendance {
+    position: unset;
+    width: 90vw !important;
+    margin: 0 auto; /*
+margin: 0 !important; */
+    padding: 0 !important;
+    display: none;
+  }
+  main {
+    padding: 0 !important;
+    width: 90vw !important;
+    margin: 0 auto;
+    margin-top: 10rem;
+  }
+  .lecture {
+    width: 40vw;
+  }
+  .lecture {
+    width: 90vw;
+  }
+  .lec {
+    width: 40vw;
+  }
+  .time {
+    min-width: 40vw !important;
+    padding-right: 0;
+  } /* .date, .calendar, .total,
+.totall { } */
+  .none {
+    display: block;
+  }
+  .icon {
+    position: absolute;
+    z-index: 111;
+    top: 3rem;
+    left: 2rem;
+  }
+  .icon ion-icon {
+    font-size: 3.5rem;
+    color: #6c5ddc;
+  }
+}
+
+@media (max-width: 34rem) {
+  .second {
+    width: 90vw;
+    margin-top: -10rem !important;
+  }
+
+  .main {
+    width: 90vw;
+    height: 90vh;
+    margin: 8rem auto;
+  }
+
+  body {
+    width: 90vw !important;
+    height: 90vh;
+  }
+
+  .container {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  /* #checkbox {
+    justify-self: flex-start !important;
+  } */
+
+  input {
+    width: 100% !important;
+  }
+
+  .remember {
+    display: grid;
+    grid-template-columns: 0.4fr 3fr;
+  }
+}

@@ -28,7 +28,7 @@ body {
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 5rem;
-  background-color: #6c5ddc;
+  background-color: rgb(108, 93, 220);
   /* border-top-left-radius: 4rem;
   border-bottom-left-radius: 4rem; */
 }
@@ -61,7 +61,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 6.4rem;
   gap: 6.4rem;
   /* border: 3px solid black; */
   /* height: 80rem; */
@@ -71,7 +71,7 @@ h1 {
   overflow: hidden;
   /* background-color: #6c5ddc; */
   /* background-color: antiquewhite; */
-  box-shadow: 0 0 2rem #c4bef1;
+  box-shadow: 0 0 2rem rgba(196, 190, 241, 0.926);
 }
 
 form input {

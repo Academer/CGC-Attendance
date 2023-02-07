@@ -1,0 +1,48 @@
+/* below 530px */
+
+@media (max-width: 33em) {
+  .picture {
+    display: none;
+  }
+
+  .log-in {
+    padding: 5rem 3rem !important;
+  }
+
+  .background {
+    display: none !important;
+  }
+
+  .container {
+    width: 90vw !important;
+    margin: 2rem auto !important;
+  }
+
+  input {
+    width: 100% !important;
+  }
+
+  .links {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .pass {
+    justify-self: flex-end !important;
+  }
+
+  .remember {
+    justify-self: flex-end !important;
+    display: none;
+  }
+
+  .btn {
+    width: 100% !important;
+    margin-top: 4.4rem !important;
+  }
+
+  .top {
+    margin-bottom: 6rem !important;
+  }
+}
