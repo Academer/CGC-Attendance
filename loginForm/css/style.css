@@ -71,7 +71,7 @@ h1 {
   overflow: hidden;
   /* background-color: #6c5ddc; */
   /* background-color: antiquewhite; */
-  box-shadow: 0 0 2rem rgba(196, 190, 241, 0.926);
+  box-shadow: 0 0 2rem #c4bef1ec;
 }
 
 form input {
