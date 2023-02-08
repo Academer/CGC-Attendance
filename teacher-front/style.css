@@ -146,114 +146,143 @@ aside ul a:hover {
   /* letter-spacing: 0.1rem; */
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  gap: 10rem;
+/* ************************ */
+/* TEACHER CSS*/
+/* ************************ */
 
-  /* grid-template-columns: 20fr 80fr; */
-
-  /* gap: 20rem; */
-}
-
-.second {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90vw;
-}
-
-.main {
-  height: 90vh;
-  display: flex;
+.teacher-container {
   margin: 0 auto;
-
-  justify-content: center !important;
-  align-items: center !important;
-  /* padding: 30rem; */
-  box-shadow: 0 0 2rem rgba(197, 191, 242, 0.96);
-  border-radius: 4rem;
-}
-
-.feedback {
+  margin-left: 50rem;
+  margin-top: 5rem;
   width: 60rem;
-  padding: 3rem;
-  /* height: 90vh */
-}
+  height: 90vh;
+  padding: 3rem 2rem;
 
-label {
-  font-size: 2rem;
-}
-
-.form-input {
-  display: block;
-  font-size: 2rem;
-  margin-bottom: 0.8rem;
-}
-
-form input,
-select {
-  padding: 2rem;
-  padding: 3rem;
-  width: 100% !important;
-
-  width: 92%;
-  padding: 1.6rem;
-  border: 1px solid #00000060;
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
-  border-radius: 4rem;
-  padding-left: 4rem;
-}
-
-.remember {
   display: flex;
-  align-items: center !important;
-  gap: 1rem;
-}
-
-#checkbox {
-  width: 18px;
-  height: 18px;
-}
-
-.btn {
-  padding: 1rem 1.6rem;
-  font-size: 2.4rem;
-  margin-top: 3rem;
-  width: 100%;
+  flex-direction: column;
+  gap: 3rem;
+  box-shadow: 0 0 1rem rgba(197, 191, 242);
   border-radius: 4rem;
-  background-color: #6c5ddc;
-  font-weight: 700;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+}
+
+.section-heading {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  gap: 2rem;
-  border: 1px solid #6c5ddc;
-  transition: 0.2s all;
-}
-
-.btn:hover {
-  transition: 0.2s all;
-  border: 1px solid #6c5ddc;
-
-  background-color: #fff;
-  color: #6c5ddc;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 .heading {
-  text-align: center;
-  text-transform: uppercase;
   font-size: 3rem;
-  margin-bottom: 4.4rem;
-  color: #6c5ddc;
+  letter-spacing: 0.1rem;
 }
 
+.time {
+  font-size: 1.6rem;
+}
+
+.section-strength {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 1fr 1fr;
+  width: 60rem;
+  box-shadow: 0 0 2rem #f3f2fc;
+  border-radius: 2rem;
+}
+
+.status {
+  font-size: 2rem;
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attending {
+  width: 100%;
+  padding: 2.5rem 3rem;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: #6c5ddc;
+  color: #fff;
+  border-radius: 4rem;
+  transition: all 0.2s;
+}
+
+.attending:hover {
+  background-color: #fff;
+  color: #6c5ddc;
+  font-weight: 600;
+  border: 1px solid #6c5ddc;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploads {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  width: 50rem;
+}
+
+.upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 40rem; */
+}
+
+.uploading {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  padding-top: 4rem;
+  /* width: 60%; */
+  /* padding: 2.5rem 3rem; */
+  cursor: pointer;
+  /* font-size: 2rem; */
+  font-weight: 600;
+  background-color: #6c5ddc;
+  color: #fff;
+  border-radius: 1.5rem;
+  transition: all 0.2s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 20rem;
+}
+
+.uploading:hover {
+  background-color: #fff;
+  color: #6c5ddc;
+  font-weight: 600;
+  border: 1px solid #6c5ddc;
+}
+
+.icons {
+  color: #fff;
+  width: 4rem;
+  height: 4rem;
+  margin-top: -2rem;
+}
+
+/* ************************ */
+/* query */
+/* ************************ */
 @media screen and (max-width: 768px) {
   /* * { font-size: 100% !important; } */
   .nooone {
@@ -355,37 +384,35 @@ margin: 0 !important; */
 }
 
 @media (max-width: 34rem) {
-  .second {
-    width: 90vw;
-    margin-top: -10rem !important;
-  }
-
-  .main {
-    width: 90vw;
-    height: 90vh;
-    margin: 8rem auto;
-  }
-
-  body {
-    width: 90vw !important;
-    height: 90vh;
-  }
-
-  .container {
-    width: 10rem;
-    height: 10rem;
-  }
-
-  /* #checkbox {
-    justify-self: flex-start !important;
+  /* html {
+    font-size: 50%;
   } */
 
-  input {
-    width: 100% !important;
+  .teacher-container {
+    margin: 0 auto;
+    width: 90vw;
+    margin-top: 4rem;
+    box-shadow: none;
   }
 
-  .remember {
-    display: grid;
-    grid-template-columns: 0.4fr 3fr;
+  .section-strength {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .status {
+    padding: 0.5rem;
+    height: 3rem;
+    align-self: flex-start;
+  }
+
+  .attending {
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+
+  .uploading {
+    width: 13rem;
   }
 }
