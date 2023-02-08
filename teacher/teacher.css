@@ -150,14 +150,17 @@ main {
   border-radius: 2rem;
   padding: 1rem;
   background-color: #6c5ddc;
-  position: relative;
+  display: flex;
 }
 
 .name {
   font-size: 3rem;
   font-weight: 600;
   color: #fff;
-  padding: 0 1rem;
+  min-width: 25rem;
+  align-self: center;
+  width: fit-content;
+  padding: 1rem 1rem;
 }
 
 .classes {
@@ -167,13 +170,12 @@ main {
 }
 
 .student-list {
-  /* width: 100%; */
+  width: 100%;
   border-bottom: 2px solid #fff;
   padding: 1rem;
-
-  gap: 1rem;
-  align-items: center;
+  display: flex;
 }
+
 .name-heading {
   font-size: 5rem;
 }
